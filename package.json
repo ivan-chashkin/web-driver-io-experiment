@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "npm run logstart && npm run logtest",
+    "logstart": "echo \"=== TEST STARTED ===\" >> tests.log && date >> tests.log",
+    "logtest": "npm test >> tests.log",
     "test": "wdio wdio.conf.js"
   },
   "keywords": [],
